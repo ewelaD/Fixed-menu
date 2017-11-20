@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Shadows Into Light', cursive;
+	margin: 0;
+	background-image: url('https://images.unsplash.com/photo-1469755785741-720ca0c526a6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=0bb7fc2dff52dc52a8fedf2148a1b0d0');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+/* main nav */
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+/* fisrt level */
+nav ul {
+	margin: 0;
+	background-color: #3C1255;
+	text-align: center;
+}
+nav ul:hover {
+	background-color: #9775AA;
+}
+nav ul a {
+	text-decoration: none;
+	color: white;
+}
+nav ul li {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 200px;
+}
+/* second level */
+nav ul ul {
+	display: none;
+	position: absolute;
+	padding: 0;
+}
+nav ul ul li {
+	display: block;
+}
+nav ul li:hover ul {
+	display: block;
+	background-color: #9775AA
+}
+nav ul li ul li:hover {
+	background-color: #651142;
+}
